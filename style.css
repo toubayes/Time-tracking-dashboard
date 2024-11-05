@@ -1,0 +1,185 @@
+/* start variable  */
+:root{
+    
+--Light-red-work: hsl(15, 100%, 70%);
+--Soft-blue-play: hsl(195, 74%, 62%);
+--Light-red-study: hsl(348, 100%, 68%);
+--Lime-green-exercise: hsl(145, 58%, 55%);
+--Violet-social: hsl(264, 64%, 52%);
+--Soft-orange-self-care: hsl(43, 84%, 65%);
+--Very-dark-blue: hsl(226, 43%, 10%);
+--Dark-blue: hsl(235, 46%, 20%);
+--Desaturated-blue: hsl(235, 45%, 61%);
+--Pale-Blue: hsl(236, 100%, 87%);
+}
+/* end variable  */
+ /* Start Global Rules */
+ * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+   }
+  body {
+   margin: 0;
+   padding: 0;
+ 
+
+  }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Small */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  @font-face {
+    font-family: "Rubik-Regular";
+    src: url(Rubik/static/Rubik-Regular.ttf);
+  }
+  @font-face {
+    font-family: "Rubik-Light";
+    src: url(Rubik/static/Rubik-Light.ttf);
+  }
+  /* End Global Rules */
+  .tracking{
+    background-color: var(--Very-dark-blue);
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .tracking .container{
+ 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+  .tracking .container .vertical{
+    grid-row: 1 / span 2;
+  }
+  .tracking .container .main-card
+{    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-right: 20px;
+    width: 100%;
+  }
+  .tracking .container .main-card .header-card{
+    background-color: var(--Desaturated-blue);
+    border-radius: 13px;
+    padding: 20px;
+    z-index: 2
+  }
+  .tracking .container .main-card .header-card img{
+    width: 110px;
+    border: 2px solid white;
+    border-radius: 100%;
+  }
+  .tracking .container .main-card .header-card p{
+    color: var(--Pale-Blue);
+    font-weight: 400;
+    font-family: "Rubik-Light";
+    margin: 50px 0;
+  }
+  .tracking .container .main-card .header-card h1{
+    font-weight: 500;
+    font-family: "Rubik-Regular";
+    font-size: 45px;
+    color: white;
+  }
+  .tracking .container .main-card .bottom-card{
+    background-color: var(--Dark-blue);
+    border-radius: 0 0 13px 13px;
+    padding: 30px;
+    bottom: 20px;
+  
+    width: 100%;
+   margin-top: -20px;
+  }
+  .tracking .container .main-card .bottom-card p{
+    color: var(--Pale-Blue);
+    font-weight: 400;
+    cursor: pointer;
+    font-family: "Rubik-Light";
+    margin-top: 30px;
+    }
+    .tracking .container .main-card .bottom-card p:hover{
+        color: white ;
+    }
+  .plans .plan{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .plan-img{
+    background-color: var(--Light-red-work);
+    border-radius: 13px 13px 0 0;
+    text-align: right;
+    height: 90px;
+   
+  }
+  .plan-text{ overflow: hidden;
+    padding: 20px;
+    background-color: var(--Dark-blue);
+    border-radius: 13px;
+  margin-top: -25px;
+  }
+  .plan-text:hover{
+    background-color: var(--Desaturated-blue);
+  }
+  .plan-text .title-plan{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .plan-text .title-plan p{
+    color:white;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Rubik-Light";
+  }
+  .plan-text h1{
+   
+    font-family: "Rubik-Regular";
+     font-size: 43px;
+    color: white;
+    font-weight: 500;
+  }
+  .plan-text > p{
+    color: var(--Pale-Blue);
+    font-weight: 300;
+  }
+  .play{
+  background-color: var(--Soft-blue-play);
+  }
+  .study{
+    background-color: var(--Light-red-study);
+  }
+  .exercice{
+    background-color: var(--Lime-green-exercise);
+  }
+  .self{
+    background-color: var(--Soft-orange-self-care);
+  }
+  .social{
+    background-color: var(--Violet-social);
+  }
